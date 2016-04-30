@@ -11,7 +11,7 @@ def parse_argument():
     parser = argparse.ArgumentParser()
     parser.add_argument("-u","--url",help='test target url,for example:http://www.abc.com/index.action')
     parser.add_argument("-c","--cmd",help='the cmd to execute,for examble:"cat /etc/passwd"')
-    parser.add_argument('--upload',default=False,action='store_true',help='upload file,PLEASE set --REMOTE_FILE and --LOCAL_FILE')
+    parser.add_argument('--upload',default=False,action='store_true',help='upload file,PLEASE set --remote_file and --local_file')
     parser.add_argument('--remote_file',help='upload file to remote')
     parser.add_argument('--local_file',help='local file to upload')
     parser.add_argument("-f","--file",help='load target url from file')
